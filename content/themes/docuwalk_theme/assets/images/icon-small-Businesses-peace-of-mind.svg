@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="44.25" height="40" viewBox="0 0 44.25 40">
+  <g id="Material_icons-01-70" data-name="Material icons-01-70" transform="translate(0.346)">
+    <path id="Path_32597" data-name="Path 32597" d="M39.374,16.036V28.108a6.025,6.025,0,0,1-6,6.036h-10a6.025,6.025,0,0,1-6-6.036V24.084h-6v4.024h-4V24.084h-2v4.024h-4V24.084H-1.173l-3.7-4.024h22.25V16.036a6.025,6.025,0,0,1,6-6.036h10A6.025,6.025,0,0,1,39.374,16.036Zm-4,0a2.009,2.009,0,0,0-2-2.012h-10a2.008,2.008,0,0,0-2,2.012V28.108a2.008,2.008,0,0,0,2,2.012h10a2.009,2.009,0,0,0,2-2.012Z" transform="translate(4.53 5.856)" fill="#2e4354"/>
+    <rect id="Rectangle_11689" data-name="Rectangle 11689" width="4.024" height="4.024" transform="translate(31.885 25.983)" fill="#2e4354"/>
+    <ellipse id="Ellipse_447" data-name="Ellipse 447" cx="4.865" cy="4.865" rx="4.865" ry="4.865" transform="translate(4.771)" fill="#2e4354"/>
+    <path id="Path_32598" data-name="Path 32598" d="M15,11.865A4.867,4.867,0,0,1,19.865,7H29.6a4.867,4.867,0,0,1,4.865,4.865V16.73H15Z" transform="translate(-15.094 5.067)" fill="#2e4354"/>
+  </g>
+</svg>

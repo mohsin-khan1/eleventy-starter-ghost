@@ -1,0 +1,66 @@
+/* .c-progressbar
+-----------------------------------------------------------*/
+$r: ".c-progressbar";
+
+// block
+//-----------------------------------------------------------
+#{$r} {
+
+  // element
+  //---------------------------------------------------------
+  > * {
+    margin-top: 16px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__item {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    color: #999999;
+  }
+
+  &__value {
+    font-weight: 600;
+    color: #333333;
+  }
+
+
+  &__himself {
+    height: 8px;
+    position: relative;
+    border-radius: 4px;
+    background-color: #eeeeee;
+    overflow: hidden;
+  }
+
+  &__progress {
+    position: absolute;
+    top: 0;
+    right: 100%;
+    bottom: 0;
+    width: 100%;
+    border-radius: 4px;
+    background-color: #0076ff;
+    transform: translateX(0);
+  }
+
+
+
+
+  // modifier
+  //---------------------------------------------------------
+}
+
+// influence
+//-----------------------------------------------------------

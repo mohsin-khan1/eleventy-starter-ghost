@@ -1,0 +1,36 @@
+/* .l-app
+-------------------------------------------------------------*/
+$r: ".l-app";
+
+// base
+//-----------------------------------------------------------
+#{$r} {
+  // display: flex;
+  // flex-direction: column;
+  // top: 0;
+  // left: 0;
+  // right: 0;
+  // bottom: 0;
+  // position: absolute;
+  scroll-behavior: smooth;
+  // overflow-y: auto;
+  padding-top: 56px;
+
+  @media (min-width: 960px) {
+    // position: fixed;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-top: $size * 6;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-top: $size * 8;
+  }
+
+  // modifiers
+  //---------------------------------------------------------
+}
+
+// influence
+//-----------------------------------------------------------

@@ -1,0 +1,132 @@
+/* .c-investor
+-----------------------------------------------------------*/
+$r: ".c-investor";
+
+// block
+//-----------------------------------------------------------
+#{$r} {
+  background-size: 100% auto;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-image: url(#{$PATH_TO_IMAGES}/company-investor-bg.svg);
+
+  // element
+  //---------------------------------------------------------
+  &__container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1920px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  &__inner {
+    padding-top: 40px;
+    padding-bottom: 64px;
+  }
+
+  &__body {
+    padding-left: calc(24% - 294px);
+    padding-right: calc(24% - 294px);
+  }
+
+  &__header {
+    display: flex;
+    color: #333333;
+  }
+
+  &__title {
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-right: 32px;
+  }
+
+  &__text {
+    flex: 1;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #2e4354;
+  }
+
+  &__directions {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+
+  &__direction {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: calc(25% - 24px);
+    margin-top: 32px;
+    margin-right: 32px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 12px;
+    padding-top: 20px;
+    border-radius: 6px;
+    border: solid 1px #eeeeee;
+    background-color: #efefef;
+
+
+    > * {
+      margin-top: 8px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+
+    &:nth-of-type(-n + 4) {
+      margin-top: 0;
+    }
+
+    &--header {
+      display: flex;
+    }
+
+    &--title {
+      flex: 1;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 1.1;
+      color: #2c595d;
+      margin-right: 24px;
+    }
+
+    &--icon {
+      height: 24px;
+      width: auto;
+    }
+
+    &--text {
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+
+    &--link {
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1.6;
+      color: #333333;
+      cursor: pointer;
+      padding: 7px 0;
+      margin-top: auto;
+    }
+  }
+
+  // modifier
+  //---------------------------------------------------------
+}
+
+// influence
+//-----------------------------------------------------------

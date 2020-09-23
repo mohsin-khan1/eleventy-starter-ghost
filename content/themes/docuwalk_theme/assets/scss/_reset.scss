@@ -1,0 +1,136 @@
+/* reset
+---------------------------------------------------------------*/
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+:focus {
+  outline: 0;
+}
+
+::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+::-ms-clear {
+  display: none;
+}
+
+::-ms-expand {
+  display: none;
+}
+
+html {
+  // overflow: hidden;
+  text-size-adjust: none;
+}
+
+body {
+  margin: 0;
+  // overflow: hidden;
+}
+
+// FIX MENU - START
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+// FIX MENU - END
+
+img {
+  flex: none;
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: bottom;
+}
+
+svg {
+  width: 1em;
+  height: 1em;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  user-select: none;
+  fill: currentColor;
+  pointer-events: none;
+  display: inline-flex;
+}
+
+b {
+  font-weight: 600;
+}
+
+[href] {
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+[href^="tel"] {
+  @media (min-width: 768px) {
+    pointer-events: none;
+  }
+}
+
+input,
+select,
+textarea {
+  border: 0;
+  margin: 0;
+  width: 100%;
+  color: inherit;
+  border-radius: 0;
+  box-shadow: none;
+  font-size: inherit;
+  font-family: inherit;
+  vertical-align: bottom;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  background-color: rgba(0, 0, 0, 0);
+
+  &:-webkit-autofill {
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
+  }
+
+  @-webkit-keyframes autofill {
+    to {
+      background: transparent;
+    }
+  }
+
+  &[hidden] {
+    display: none;
+  }
+
+  &[disabled] {
+    cursor: not-allowed;
+    background-color: initial;
+  }
+}
+
+textarea {
+  resize: none;
+}
+
+button,
+[type="reset"],
+[type="button"],
+[type="submit"] {
+  border: 0;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  appearance: none;
+  user-select: none;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: bottom;
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}

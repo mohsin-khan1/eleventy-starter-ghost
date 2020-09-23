@@ -1,0 +1,220 @@
+<main class="l-main l-main--clear">
+  <div class="c-news-feed">
+    <div class="c-news-feed__container">
+      <div class="c-news-feed__inner">
+        {{#foreach posts}}
+          {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
+          {{> "post-card"}}
+        {{/foreach}}
+      </div>
+    </div>
+  </div>
+</main>
+
+{{!--
+<main class="l-main l-main--pt-0">
+  <div class="l-container l-container--w-1920">
+    <div class="c-blog">
+      <a href="/{{{block "url-prefix"}}}news-detail" class="c-blog__item c-blog__item--1">
+        <div class="c-blog__news c-blog__news--big">
+          <div class="c-blog__img">
+            <img src="{{asset "built/images/shanghai-PYGQ8NH@3x.png"}}" alt="Fast Company Cover Story">
+          </div>
+          <div class="c-blog__content">
+            <div class="c-blog__title">
+              Fast Company Cover Story
+            </div>
+            <div class="c-blog__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+            <div class="c-blog__info">
+              <div class="c-blog__author">
+                <img class="c-blog__icon" src="{{asset "built/images/clock.svg"}}" alt="">
+                Author Name
+              </div>
+              <div class="c-blog__time">
+                <img class="c-blog__icon" src="{{asset "built/images/clock.svg"}}" alt="">
+                1h ago
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="/{{{block "url-prefix"}}}news-detail" class="c-blog__item c-blog__item--2">
+        <div class="c-blog__news">
+          <div class="c-blog__img">
+            <img src="{{asset "built/images/business-concepts-two-men-are-consulting-a-busines-PK3YZUA@3x.png"}}" alt="">
+          </div>
+          <div class="c-blog__content">
+            <div class="c-blog__title">
+              Excepteur sint occaecat cupidatat non proident sunt in culpa.
+            </div>
+            <div class="c-blog__text">
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est eopksio laborum. Sed ut perspiciatis.
+            </div>
+            <div class="c-blog__info">
+              <div class="c-blog__author">
+                <img class="c-blog__icon" src="{{asset "built/images/clock.svg"}}" alt="">
+                Author Name
+              </div>
+              <div class="c-blog__time">
+                <img class="c-blog__icon" src="{{asset "built/images/clock.svg"}}" alt="">
+                1h ago
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="/{{{block "url-prefix"}}}news-detail" class="c-blog__item c-blog__item--3">
+        <div class="c-blog__news c-blog__news--simple">
+          <div class="c-blog__category">
+            Tech
+          </div>
+          <div class="c-blog__img">
+            <img src="{{asset "built/images/part-of-face-of-young-programmer-in-eyeglasses-wit-LNRG9L5@3x.png"}}" alt="">
+          </div>
+          <div class="c-blog__content">
+            <div class="c-blog__title">
+              This is a title
+            </div>
+            <div class="c-blog__info">
+              <div class="c-blog__user">
+                Ainara Vergara
+              </div>
+              <div class="c-blog__date">
+                20 august 2019
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="/{{{block "url-prefix"}}}news-detail" class="c-blog__item c-blog__item--4">
+        <div class="c-blog__news">
+          <div class="c-blog__category">
+            Business
+          </div>
+          <div class="c-blog__img">
+            <img src="{{asset "built/images/part-of-face-of-young-programmer-in-eyeglasses-wit-LNRG9L5@3x.png"}}" alt="">
+          </div>
+          <div class="c-blog__content">
+            <div class="c-blog__title">
+              This is a title
+            </div>
+            <div class="c-blog__info">
+              <div class="c-blog__user">
+                Ainara Vergara
+              </div>
+              <div class="c-blog__date">
+                20 august 2019
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="/{{{block "url-prefix"}}}news-detail" class="c-blog__item c-blog__item--5">
+        <div class="c-blog__news">
+          <div class="c-blog__category">
+            Tech
+          </div>
+          <div class="c-blog__img">
+            <img src="{{asset "built/images/part-of-face-of-young-programmer-in-eyeglasses-wit-LNRG9L5@3x.png"}}" alt="">
+          </div>
+          <div class="c-blog__content">
+            <div class="c-blog__title">
+              This is a title
+            </div>
+            <div class="c-blog__info">
+              <div class="c-blog__user">
+                Ainara Vergara
+              </div>
+              <div class="c-blog__date">
+                20 august 2019
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="/{{{block "url-prefix"}}}news-detail" class="c-blog__item c-blog__item--6">
+        <div class="c-blog__news">
+          <div class="c-blog__category">
+            Real Estate4
+          </div>
+          <div class="c-blog__img">
+            <img src="{{asset "built/images/part-of-face-of-young-programmer-in-eyeglasses-wit-LNRG9L5@3x.png"}}" alt="">
+          </div>
+          <div class="c-blog__content">
+            <div class="c-blog__title">
+              This is a title
+            </div>
+            <div class="c-blog__info">
+              <div class="c-blog__user">
+                Ainara Vergara
+              </div>
+              <div class="c-blog__date">
+                20 august 2019
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="/{{{block "url-prefix"}}}news-detail" class="c-blog__item c-blog__item--7">
+        <div class="c-blog__news">
+          <div class="c-blog__img">
+            <img src="{{asset "built/images/business-concepts-two-men-are-consulting-a-busines-PK3YZUA@3x.png"}}" alt="">
+          </div>
+          <div class="c-blog__content">
+            <div class="c-blog__title">
+              Excepteur sint occaecat cupidatat non proident sunt in culpa.
+            </div>
+            <div class="c-blog__text">
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est eopksio laborum. Sed ut perspiciatis.
+            </div>
+            <div class="c-blog__info">
+              <div class="c-blog__author">
+                <img class="c-blog__icon" src="{{asset "built/images/clock.svg"}}" alt="">
+                Author Name
+              </div>
+              <div class="c-blog__time">
+                <img class="c-blog__icon" src="{{asset "built/images/clock.svg"}}" alt="">
+                1h ago
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="/{{{block "url-prefix"}}}news-detail" class="c-blog__item c-blog__item--8">
+        <div class="c-blog__news c-blog__news--big">
+          <div class="c-blog__img">
+            <img src="{{asset "built/images/shanghai-PYGQ8NH@3x.png"}}" alt="Fast Company Cover Story">
+          </div>
+          <div class="c-blog__content">
+            <div class="c-blog__title">
+              Future of Contracts
+            </div>
+            <div class="c-blog__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+            <div class="c-blog__info">
+              <div class="c-blog__author">
+                <img class="c-blog__icon" src="{{asset "built/images/clock.svg"}}" alt="">
+                Author Name
+              </div>
+              <div class="c-blog__time">
+                <img class="c-blog__icon" src="{{asset "built/images/clock.svg"}}" alt="">
+                1h ago
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</main>
+--}}

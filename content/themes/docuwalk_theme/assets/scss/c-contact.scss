@@ -1,0 +1,72 @@
+/* .c-contact
+-----------------------------------------------------------*/
+$r: ".c-contact";
+
+// block
+//-----------------------------------------------------------
+#{$r} {
+  font-size: 14px;
+  line-height: 1.6;
+
+  // element
+  //---------------------------------------------------------
+  &__title {
+    font-size: 18px;
+    line-height: 1;
+    color: #0e6c75;
+    margin-bottom: 0.25em;
+  }
+
+  &__inner {
+
+  }
+
+  &__item {
+    & + & {
+      margin-top: 0.75em;
+    }
+  }
+
+  &__sub-title {
+    font-weight: 600;
+    font-family: "HelveticaNeue Condensed";
+  }
+
+  &__block {
+
+  }
+
+  &__row {
+    font-style: italic;
+  }
+
+  &__link {
+    color: inherit;
+    font-style: normal;
+    cursor: pointer;
+
+    &[href^="mailto:"] {
+      font-weight: 600;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__value {
+    font-style: normal;
+  }
+
+  // modifier
+  //---------------------------------------------------------
+}
+
+// influence
+//-----------------------------------------------------------
+
+#{$r} {
+  & + & {
+    margin-top: 1.2em;
+  }
+}

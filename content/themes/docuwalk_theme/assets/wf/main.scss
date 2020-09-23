@@ -1,0 +1,8 @@
+$PATH_TO_IMAGES: './images';
+$PATH_TO_FONTS: './fonts';
+
+@import '_style';
+
+/* Koenig styles for Ghost
+/* ---------------------------------------------------------- */
+@import "koenig.scss";

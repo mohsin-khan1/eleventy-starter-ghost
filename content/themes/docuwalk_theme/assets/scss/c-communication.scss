@@ -1,0 +1,58 @@
+/* .c-communication
+-----------------------------------------------------------*/
+$r: ".c-communication";
+
+// block
+//-----------------------------------------------------------
+#{$r} {
+  background-color: #bdd8e6;
+
+  // element
+  //---------------------------------------------------------
+  &__container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1920px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  &__inner {
+    display: flex;
+    padding-top: 4%;
+    padding-bottom: 32px;
+  }
+
+  &__image {
+    flex: 1;
+    align-self: flex-end;
+    margin-bottom: -32px;
+  }
+
+  &__body {
+    width: calc(24% + 440px);
+    margin-left: 1%;
+  }
+
+  &__title {
+    font-family: "HelveticaNeue";
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1.2;
+    // color: #333333;
+  }
+
+  &__content {
+    margin-top: 24px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #2e4354;
+  }
+
+  // modifier
+  //---------------------------------------------------------
+}
+
+// influence
+//-----------------------------------------------------------

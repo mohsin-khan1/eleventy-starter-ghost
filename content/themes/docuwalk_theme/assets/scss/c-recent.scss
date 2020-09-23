@@ -1,0 +1,248 @@
+/* .c-recent
+-----------------------------------------------------------*/
+$r: ".c-recent";
+
+// block
+//-----------------------------------------------------------
+#{$r} {
+  padding-left: $size * 4;
+  padding-right: $size * 4;
+
+  @media (max-width: 1280px - 1) {
+    padding-left: $size * 3;
+    padding-right: $size * 3;
+  }
+
+  @media (max-width: 480px - 1) {
+    padding-left: $size * 2;
+    padding-right: $size * 2;
+  }
+
+  // element
+  //---------------------------------------------------------
+
+  &__title {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #333333;
+
+    @media (max-width: 1280px - 1) {
+      max-width: 1024px;
+    }
+
+    @media (max-width: 768px - 1) {
+      font-size: 28px;
+    }
+  }
+
+  &__container {
+    width: 100%;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__inner {
+    padding: 32px 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (max-width: 1280px - 1) {
+      max-width: 1024px;
+    }
+
+    @media (max-width: 768px - 1) {
+      max-width: 500px;
+    }
+  }
+
+  &__body {
+    display: flex;
+    margin-top: $size * 2;
+
+    @media (max-width: 768px - 1) {
+      display: block;
+    }
+  }
+
+  &__list {
+    > * {
+      margin-top: $size;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+
+    &--item {}
+
+    &--title {
+      font-size: $size * 2;
+      color: #4d6882;
+      font-weight: 600;
+      transition: color .3s;
+      text-decoration: underline;
+
+      @media (max-width: 768px - 1) {
+        font-size: 14px;
+      }
+
+      &:hover {
+        color: #4b7ba8;
+        text-decoration: none;
+      }
+    }
+
+    &--date {
+      font-size: $size + 4;
+      line-height: 1.6;
+      color: #999999;
+    }
+  }
+
+  &__grid {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: $size * 8;
+    align-items: flex-start;
+
+    @media (max-width: 768px - 1) {
+      margin-left: 0;
+      margin-top: 16px;
+    }
+
+    @media (max-width: 480px - 1) {
+      margin-top: 24px;
+      margin-left: 16px;
+      margin-right: 16px;
+    }
+
+    &--item {
+      margin-top: $size * 4;
+      margin-right: $size * 4;
+      position: relative;
+
+      margin-top: $size * 8;
+      margin-right: $size * 8;
+      width: calc(25% - 48px);
+
+      &:nth-of-type(4n) {
+        margin-right: 0;
+      }
+
+      &:nth-of-type(-n + 4) {
+          margin-top: 0;
+      }
+
+      @media (max-width: 1280px - 1) {
+        width: calc(50% - 24px);
+
+        &:nth-child(n) {
+          margin-top: 48px;
+          margin-right: 48px;
+        }
+
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
+
+        &:nth-of-type(-n + 2) {
+          margin-top: 0;
+        }
+      }
+
+      @media (max-width: 768px - 1) {
+        width: calc(50% - 12px);
+
+        &:nth-child(n) {
+          margin-top: 24px;
+          margin-right: 24px;
+        }
+
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
+
+        &:nth-of-type(-n + 2) {
+          margin-top: 0;
+        }
+      }
+
+      @media (max-width: 480px - 1) {
+        &:nth-child(n) {
+          margin-left: 0;
+          margin-right: 0;
+          margin-top: 32px;
+          width: 100%;
+        }
+
+        &:nth-child(1) {
+          margin-top: 0;
+        }
+      }
+
+      &:before {
+        content: '';
+        top: -16px;
+        bottom: -16px;
+        right: -16px;
+        left: -16px;
+        position: absolute;
+        z-index: 0;
+        opacity: 0;
+        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.25);
+        transition: opacity .3s;
+      }
+
+      &:hover {
+        &:before {
+          opacity: 1;
+        }
+      }
+    }
+
+    &--img {
+      position: relative;
+      padding-top: calc(100% / 296 * 190);
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        object-fit: cover;
+        display: block;
+        height: 100%;
+        width: 100%;
+        object-position: center center;
+      }
+    }
+
+    &--title {
+      font-size: 16px;
+      margin-top: 12px;
+      color: #4d6882;
+    }
+
+    &--date {
+      font-size: 12px;
+      line-height: 1.6;
+      color: #999999;
+    }
+  }
+
+  &__desc {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  // modifier
+  //---------------------------------------------------------
+}
+
+// influence
+//-----------------------------------------------------------

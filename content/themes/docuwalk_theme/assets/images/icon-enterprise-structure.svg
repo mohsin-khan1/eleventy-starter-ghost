@@ -1,0 +1,12 @@
+<svg id="Group_20843" data-name="Group 20843" xmlns="http://www.w3.org/2000/svg" width="90.003" height="90.003" viewBox="0 0 90.003 90.003">
+  <circle id="Ellipse_2092" data-name="Ellipse 2092" cx="45.002" cy="45.002" r="45.002" fill="#4d6882"/>
+  <g id="skyscraper_tower_building" data-name="skyscraper, tower, building" transform="translate(27.175 17.655)">
+    <path id="Path_42748" data-name="Path 42748" d="M42.914,10.752h-6.1V7.1A1.219,1.219,0,0,0,35.6,5.876H28.286V2.219a1.219,1.219,0,0,0-2.438,0V5.876H18.533A1.219,1.219,0,0,0,17.314,7.1v3.657h-6.1A1.219,1.219,0,0,0,10,11.971V55.857a1.219,1.219,0,0,0,1.219,1.219h31.7a1.219,1.219,0,0,0,1.219-1.219V11.971A1.219,1.219,0,0,0,42.914,10.752ZM19.752,8.314H34.381v2.438H19.752ZM22.19,54.638V44.885h9.752v9.752Zm19.5,0H34.381V43.666a1.219,1.219,0,0,0-1.219-1.219H20.971a1.219,1.219,0,0,0-1.219,1.219V54.638H12.438V13.19H41.7Z" transform="translate(-10 -1)" fill="#fff"/>
+    <path id="Path_42749" data-name="Path 42749" d="M22.1,15H17.219a1.219,1.219,0,1,0,0,2.438H22.1A1.219,1.219,0,1,0,22.1,15Z" transform="translate(-8.686 2.067)" fill="#fff"/>
+    <path id="Path_42750" data-name="Path 42750" d="M27.219,15a1.219,1.219,0,1,0,0,2.438H32.1A1.219,1.219,0,1,0,32.1,15Z" transform="translate(-6.495 2.067)" fill="#fff"/>
+    <path id="Path_42751" data-name="Path 42751" d="M22.1,21H17.219a1.219,1.219,0,1,0,0,2.438H22.1A1.219,1.219,0,0,0,22.1,21Z" transform="translate(-8.686 3.381)" fill="#fff"/>
+    <path id="Path_42752" data-name="Path 42752" d="M32.1,21H27.219a1.219,1.219,0,1,0,0,2.438H32.1A1.219,1.219,0,1,0,32.1,21Z" transform="translate(-6.495 3.381)" fill="#fff"/>
+    <path id="Path_42753" data-name="Path 42753" d="M22.1,27H17.219a1.219,1.219,0,1,0,0,2.438H22.1A1.219,1.219,0,1,0,22.1,27Z" transform="translate(-8.686 4.695)" fill="#fff"/>
+    <path id="Path_42754" data-name="Path 42754" d="M32.1,27H27.219a1.219,1.219,0,1,0,0,2.438H32.1A1.219,1.219,0,1,0,32.1,27Z" transform="translate(-6.495 4.695)" fill="#fff"/>
+  </g>
+</svg>

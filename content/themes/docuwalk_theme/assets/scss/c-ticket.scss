@@ -1,0 +1,213 @@
+/* .c-ticket
+-----------------------------------------------------------*/
+$r: ".c-ticket";
+
+// block
+//-----------------------------------------------------------
+#{$r} {
+  background-color: #c0e1ee;
+  background-image: url(#{$PATH_TO_IMAGES}/technical-support-ticket-bg.svg);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: 0 0;
+
+  // element
+  //---------------------------------------------------------
+  &__container {
+    position: relative;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1920px;
+    padding-left: 32px;
+    padding-right: 32px;
+
+    @media (max-width: 1280px - 1) {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
+    @media (max-width: 768px - 1) {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 16%;
+    padding-right: 8%;
+    padding-right: calc(23% - 276px);
+
+    @media (max-width: 1280px - 1) {
+      padding-left: 8%;
+    }
+
+    @media (max-width: 992px - 1) {
+      padding-left: 0;
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+
+    @media (max-width: 768px - 1) {
+      flex-direction: column;
+      margin-left: auto;
+      margin-right: auto;
+      width: auto;
+      max-width: 500px;
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
+  }
+
+  &__body {
+    display: flex;
+  }
+
+  &__image {
+    width: 108px;
+    margin-right: 24px;
+    margin-top: 8px;
+
+    @media (max-width: 1280px - 1) {
+      width: 88px;
+    }
+
+    @media (max-width: 992px - 1) {
+      width: 72px;
+      margin-right: 12px;
+    }
+
+    @media (max-width: 480px - 1) {
+      width: 36px;
+      margin-top: 0;
+    }
+
+    img {
+
+    }
+  }
+
+  &__content {
+    flex: 1;
+    max-width: 528px;
+  }
+
+  &__title {
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 1.1;
+    color: #d3a09d;
+
+    @media (max-width: 1280px - 1) {
+      font-size: 48px;
+    }
+
+    @media (max-width: 992px - 1) {
+      font-size: 40px;
+    }
+
+    @media (max-width: 480px - 1) {
+      font-size: 36px;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #2e4354;
+
+    @media (max-width: 992px - 1) {
+      font-size: 14px;
+    }
+  }
+
+  &__form {
+    width: 400px;
+    margin-left: calc(17.5% - 138px);
+
+    @media (max-width: 1280px - 1) {
+      margin-left: 2%;
+      width: 460px;
+    }
+
+    @media (max-width: 992px - 1) {
+      margin-left: 24px;
+      width: 544px;
+    }
+
+    @media (max-width: 768px - 1) {
+      margin-left: 0;
+      margin-top: 24px;
+      width: auto;
+    }
+  }
+
+  &__contact {
+
+  }
+
+  // modifier
+  //---------------------------------------------------------
+}
+
+// influence
+//-----------------------------------------------------------
+
+#{$r} {
+  &__form {
+    .c-form {
+      $form: ".c-form";
+
+      &__row {
+        &--2 {
+          @media (max-width: 480px - 1) {
+            flex-direction: column;
+          }
+
+          #{$form}__col {
+            @media (max-width: 480px - 1) {
+              width: auto;
+              margin-right: 0;
+            }
+
+            & + #{$form}__col {
+              @media (max-width: 480px - 1) {
+                margin-top: 12px;
+              }
+            }
+          }
+        }
+      }
+
+      &__col {
+        &--flex-end {
+          @media (max-width: 480px - 1) {
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+
+  &__contact {
+    .c-contact {
+      $contact: '.c-contact';
+
+      @media (max-width: 480px - 1) {
+        font-size: 12px;
+      }
+
+      &__row {
+        font-style: normal;
+
+        & + #{$contact}__row {
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+}

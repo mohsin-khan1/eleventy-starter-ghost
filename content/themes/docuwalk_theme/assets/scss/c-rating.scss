@@ -1,0 +1,54 @@
+/* .c-rating
+-----------------------------------------------------------*/
+$r: ".c-rating";
+
+// block
+//-----------------------------------------------------------
+#{$r} {
+  display: flex;
+  font-size: 24px;
+
+  // element
+  //---------------------------------------------------------
+  &__item {
+    padding: 0;
+    line-height: 1;
+    width: 1em;
+    height: 1em;
+    position: relative;
+    margin: 0 0.1em;
+
+    &:before,
+    &:after {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      content: '';
+      position: absolute;
+      background-image: url(#{$PATH_TO_IMAGES}/rating-stars.svg);
+      background-repeat: no-repeat;
+      background-size: auto 100%;
+      background-position: 0% 50%;
+      opacity: 1;
+      transition: opacity 0.3s;
+    }
+
+    &:after {
+      opacity: 0;
+      background-position: 100% 50%;
+    }
+
+    &--active {
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
+
+  // modifier
+  //---------------------------------------------------------
+}
+
+// influence
+//-----------------------------------------------------------

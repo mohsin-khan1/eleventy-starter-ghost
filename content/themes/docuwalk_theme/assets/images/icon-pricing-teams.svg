@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="73" height="42" viewBox="0 0 73 42">
+  <g id="Group_20927" data-name="Group 20927" transform="translate(-147.691 -19.423)">
+    <g id="Icon_Profile" data-name="Icon/Profile" transform="translate(166.754 22.383)">
+      <rect id="Base" width="36" height="36" transform="translate(-0.063 0.04)" fill="none"/>
+      <path id="Mask" d="M0,23.876V20.891c0-3.97,7.953-5.97,11.938-5.97s11.938,2,11.938,5.97v2.984ZM5.968,5.968a5.969,5.969,0,1,1,5.97,5.97A5.967,5.967,0,0,1,5.968,5.968Z" transform="translate(5.969 5.969)" fill="#4d6882"/>
+    </g>
+    <g id="Icon_Profile-2" data-name="Icon/Profile" transform="translate(184.66 25.74)">
+      <rect id="Base-2" data-name="Base" width="36" height="36" transform="translate(0.031 -0.318)" fill="none"/>
+      <path id="Mask-2" data-name="Mask" d="M0,23.876V20.891c0-3.97,7.953-5.97,11.938-5.97s11.938,2,11.938,5.97v2.984ZM5.968,5.968a5.969,5.969,0,1,1,5.97,5.97A5.967,5.967,0,0,1,5.968,5.968Z" transform="translate(2.969 5.969)" fill="#4d6882"/>
+    </g>
+    <g id="Icon_Profile-3" data-name="Icon/Profile" transform="translate(147.847 19.145)">
+      <rect id="Base-3" data-name="Base" width="36" height="36" transform="translate(-0.156 0.278)" fill="none"/>
+      <path id="Mask-3" data-name="Mask" d="M0,23.876V20.891c0-3.97,7.953-5.97,11.938-5.97s11.938,2,11.938,5.97v2.984ZM5.968,5.968a5.969,5.969,0,1,1,5.97,5.97A5.967,5.967,0,0,1,5.968,5.968Z" transform="translate(8.969 5.969)" fill="#4d6882"/>
+    </g>
+  </g>
+</svg>

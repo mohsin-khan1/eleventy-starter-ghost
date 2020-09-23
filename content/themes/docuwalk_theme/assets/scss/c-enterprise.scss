@@ -1,0 +1,121 @@
+/* .c-enterprise
+-----------------------------------------------------------*/
+$r: ".c-enterprise";
+
+// block
+//-----------------------------------------------------------
+#{$r} {
+  background-color: #e6dcbd;
+
+  // element
+  //---------------------------------------------------------
+  &__container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1920px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: calc(24% - 294px);
+    padding-right: calc(24% - 294px);
+  }
+
+  &__image {
+    flex: 1;
+    margin-right: 32px;
+  }
+
+  &__body {
+    width: 50%;
+    margin-left: calc(24% - 294px);
+  }
+
+  &__title {
+    font-family: 'HelveticaNeue';
+    font-size: 64px;
+    font-weight: 900;
+    // font-stretch: condensed;
+    line-height: 1.1;
+  }
+
+  &__content {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 24px;
+  }
+
+  &__grid {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 12%;
+    margin-top: 24px;
+
+    &--item {
+      width: calc(50% - 32px);
+      margin-top: 16px;
+      margin-right: 64px;
+
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+
+      &:nth-of-type(-n + 2) {
+          margin-top: 0;
+      }
+    }
+
+    &--header {
+      display: flex;
+      align-items: center;
+    }
+
+    &--icon-wrap {
+      margin-right: 0.6em;
+    }
+
+    &--icon {
+      width: 2.5em;
+      height: 2.5em;
+    }
+
+    &--title {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      margin-top: 0;
+      margin-bottom: 0;
+      font-family: Arial, sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 1.2;
+      min-height: 2.4em;
+    }
+
+    &--content {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+  }
+
+  &__controls {
+    margin-top: 24px;
+  }
+
+  &__button {
+
+  }
+
+
+  // modifier
+  //---------------------------------------------------------
+}
+
+// influence
+//-----------------------------------------------------------

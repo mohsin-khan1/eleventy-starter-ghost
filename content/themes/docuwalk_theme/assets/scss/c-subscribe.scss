@@ -1,0 +1,65 @@
+/* .c-subscribe
+-----------------------------------------------------------*/
+$r: ".c-subscribe";
+
+// block
+//-----------------------------------------------------------
+#{$r} {
+
+  // element
+  //---------------------------------------------------------
+
+  &__container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1920px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding-left: calc(24% - 294px);
+    padding-right: calc(24% - 294px);
+    padding-bottom: 32px;
+    padding-top: 32px;
+  }
+
+  &__image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__body {
+    width: calc(68% - 220px);
+    margin-right: 4%;
+  }
+
+  &__title {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #0e6c75;
+  }
+
+  &__content {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #4d6882;
+  }
+
+  &__form {
+    max-width: 400px;
+    margin-top: 24px;
+  }
+
+  // modifier
+  //---------------------------------------------------------
+}
+
+// influence
+//-----------------------------------------------------------

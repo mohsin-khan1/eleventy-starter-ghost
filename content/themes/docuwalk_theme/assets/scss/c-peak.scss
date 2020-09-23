@@ -1,0 +1,59 @@
+/* .c-peak
+-----------------------------------------------------------*/
+$r: ".c-peak";
+
+// block
+//-----------------------------------------------------------
+#{$r} {
+  background-color: #b9c9cc;
+  background-image: url(#{$PATH_TO_IMAGES}/company-peak-bg.svg);
+  background-position: 0 100%;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+
+  // element
+  //---------------------------------------------------------
+  &__container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1920px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  &__inner {
+    display: flex;
+    padding-left: calc(24% - 294px);
+    padding-right: calc(24% - 294px);
+  }
+
+  &__body {
+    margin-left: auto;
+    padding-top: 4%;
+    padding-bottom: calc(60% - 520px);
+    width: 52%;
+  }
+
+  &__title {
+    font-family: 'HelveticaNeue', Arial;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #2e4354;
+  }
+
+  &__content {
+    margin-top: 32px;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #2e4354;
+  }
+
+
+  // modifier
+  //---------------------------------------------------------
+}
+
+// influence
+//-----------------------------------------------------------

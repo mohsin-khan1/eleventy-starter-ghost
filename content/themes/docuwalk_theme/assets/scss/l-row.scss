@@ -1,0 +1,55 @@
+/* .l-row
+-------------------------------------------------------------*/
+$r: ".l-row";
+
+// base
+//-----------------------------------------------------------
+#{$r} {
+  margin-top: $size * 4;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  // elements
+  //-----------------------------------------------------------
+
+  // modifiers
+  //---------------------------------------------------------
+  &--center {
+    text-align: center;
+  }
+
+  &--flex-row-center {
+    display: flex;
+    justify-content: center;
+  }
+
+  &--m-0 {
+    margin: 0;
+  }
+
+  &--sky {
+    background-color: #bdd8e6;
+  }
+
+  &--sea {
+    background-color: #c0e1ee;
+  }
+
+  &--impact {
+    background-color: #bdd8e6;
+  }
+
+  &--pr-pl {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  &--learn {
+    background-color: #b4d0be;
+  }
+}
+
+// influence
+//-----------------------------------------------------------

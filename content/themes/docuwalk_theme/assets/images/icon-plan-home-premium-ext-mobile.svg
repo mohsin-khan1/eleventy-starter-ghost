@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="314" height="110.192" viewBox="0 0 314 110.192">
+    <defs>
+        <linearGradient id="prefix__linear-gradient" x1=".376" x2=".542" y1="-.181" y2=".917" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#e4b62c"/>
+            <stop offset="1" stop-color="#643e0a"/>
+        </linearGradient>
+        <linearGradient id="prefix__linear-gradient-2" x1=".481" x2=".501" y1=".009" y2=".909" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#0e755d"/>
+            <stop offset="1" stop-color="#b4d0be"/>
+        </linearGradient>
+        <linearGradient id="prefix__linear-gradient-3" x1=".518" x2=".473" y1="1.132" y2="-.643" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#fde7d2"/>
+            <stop offset=".995" stop-color="#d17573"/>
+        </linearGradient>
+        <style>
+            .prefix__cls-6{fill:#d5d9dd}
+        </style>
+    </defs>
+    <g id="prefix__Group_20924" data-name="Group 20924" transform="translate(-31 -5220.808)">
+        <path id="prefix__Rectangle_16422" fill="#d1c38e" d="M0 0H314V89H0z" data-name="Rectangle 16422" transform="translate(31 5231)"/>
+        <g id="prefix__Group_20881" data-name="Group 20881" transform="translate(-415 2074)">
+            <path id="prefix__Path_53179" fill="url(#prefix__linear-gradient)" d="M525.533 232.127a28.9 28.9 0 0 1-9.091 5.784c-4.625 1.82-10.832 3.124-15.85.114-9.24-5.544-16.968-4.872-20.664-5.712s-4.368-6.048-5.208-13.44-5.6-8.456-7.224-14.112c-1.463-5.095-1.966-16.98 13.993-19.877a27.967 27.967 0 0 0 11.812-5.257c4.248-3.205 8.138-5.129 13.786-3.482 8.064 2.352 9.968 6.16 14.336 17.024s10.864 11.536 19.824 8.4 11.7 6.963 8.736 14.112c-1.706 4.11-2.335 11.912 6.832 13.44 9.408 1.568-5.936 16.688-16.576 6.5-9.539-9.143-8.311-9.454-14.706-3.494z" data-name="Path 53179" transform="translate(95.9 2971.265)"/>
+            <path id="prefix__Path_53180" fill="url(#prefix__linear-gradient-2)" d="M490.473 323c-36.414 7.728-35.154 49.5-35.154 49.5 3.136 8.848 35.154 5.264 35.154 5.264s32.018 3.584 35.154-5.264c0 0 1.26-41.772-35.154-49.5z" data-name="Path 53180" transform="translate(103.541 2873.353)"/>
+            <path id="prefix__Path_53181" fill="url(#prefix__linear-gradient-3)" d="M539.09 244.754c-.42-2.184-1.428-2.184-8.568-2.352s-9.912-8.652-9.912-8.652c-2.242 9.488-9.759 12.913-14.279 14.13v.066c0 10.345 7.559 18.732 16.884 18.732s16.884-8.386 16.884-18.732v-.141a9.356 9.356 0 0 1-1.009-3.051z" data-name="Path 53181" transform="translate(69.666 2932.615)"/>
+            <g id="prefix__Group_19845" data-name="Group 19845" transform="translate(570.983 3223.694)">
+                <path id="prefix__Rectangle_14962" fill="#e5e7e9" d="M6 0h33.276a6 6 0 0 1 6 6v24.786H0V6a6 6 0 0 1 6-6z" data-name="Rectangle 14962"/>
+                <path id="prefix__Rectangle_14963" d="M0 0H45.276V2.52H0z" class="prefix__cls-6" data-name="Rectangle 14963" transform="translate(0 30.786)"/>
+                <circle id="prefix__Ellipse_1941" cx="4.914" cy="4.914" r="4.914" class="prefix__cls-6" data-name="Ellipse 1941" transform="translate(17.724 6.426)"/>
+            </g>
+        </g>
+    </g>
+</svg>

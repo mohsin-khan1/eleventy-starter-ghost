@@ -1,0 +1,105 @@
+<div data-collapse="medium" data-animation="default" data-duration="400" role="banner" class="c-nav w-nav">
+  <div class="h-container c-nav__inner">
+    <div class="c-nav__hamburger-button w-nav-button">
+      <img src="{{asset "built/images/hamburger.svg"}}" alt="" class="h-svg-icon c-nav__icon--hamburger" />
+      <img src="{{asset "built/images/times.svg"}}" alt="" class="h-svg-icon c-nav__icon--times" />
+    </div>
+
+    <a href="/{{{block "url-prefix"}}}" aria-current="page" class="c-nav__logo w-nav-brand _w--current">
+      <img src="{{asset "built/images/docuwalk-logo.svg"}}" alt="DocuWalk" class="image" />
+    </a>
+
+    <nav role="navigation" class="c-nav__menu w-nav-menu">
+      <a href="/{{{block "url-prefix"}}}product" class="c-nav__menu-item w-nav-link">
+        {{t "Product"}}
+      </a>
+
+      <div data-hover="1" data-delay="0" class="c-nav__dropdown w-dropdown">
+        <div class="c-nav__dropdown-toggle w-dropdown-toggle">
+          <a href="/{{{block "url-prefix"}}}industries" class="c-nav__menu-item w-nav-link">
+            {{t "Industries"}}
+          </a>
+        </div>
+        <nav class="c-nav__dropdown-list w-dropdown-list">
+          <a href="/{{{block "url-prefix"}}}industries-small-business" class="c-nav__dropdown-item w-dropdown-link">
+            {{t "Small Business"}}
+          </a>
+          <a href="/{{{block "url-prefix"}}}industries-real-estate" class="c-nav__dropdown-item w-dropdown-link">
+            {{t "Real Estate"}}
+          </a>
+          <a href="/{{{block "url-prefix"}}}industries-legal" class="c-nav__dropdown-item w-dropdown-link">
+            {{t "Legal"}}
+          </a>
+          <a href="/{{{block "url-prefix"}}}industries-government" class="c-nav__dropdown-item w-dropdown-link">
+            {{t "Government"}}
+          </a>
+        </nav>
+      </div>
+
+      <a href="/{{{block "url-prefix"}}}pricing" class="c-nav__menu-item w-nav-link">
+        {{t "Pricing"}}
+      </a>
+
+      <div data-hover="1" data-delay="0" class="c-nav__dropdown w-dropdown">
+        <div class="c-nav__dropdown-toggle w-dropdown-toggle">
+          <a href="/{{{block "url-prefix"}}}resources" class="c-nav__menu-item w-nav-link">
+            {{t "Resources"}}
+          </a>
+        </div>
+        <nav class="c-nav__dropdown-list w-dropdown-list">
+          <a href="/{{{block "url-prefix"}}}faq" class="c-nav__dropdown-item w-dropdown-link">
+            {{t "FAQ"}}
+          </a>
+          <a href="/{{{block "url-prefix"}}}training-and-tutorials" class="c-nav__dropdown-item w-dropdown-link h-stage-one--hide">
+            {{t "Training & Tutorials"}}
+          </a>
+          <a href="/{{{block "url-prefix"}}}customer-service" class="c-nav__dropdown-item w-dropdown-link">
+            {{t "Customer Service"}}
+          </a>
+          <a href="/{{{block "url-prefix"}}}partner-program" class="c-nav__dropdown-item w-dropdown-link">
+            {{t "Partner Program"}}
+          </a>
+          <a href="/{{{block "url-prefix"}}}developer-program" class="c-nav__dropdown-item w-dropdown-link h-stage-one--hide">
+            {{t "Developer Program"}}
+          </a>
+          <a href="/{{{block "url-prefix"}}}legal-terms-and-conditions" class="c-nav__dropdown-item w-dropdown-link">
+            {{t "Terms and Conditions"}}
+          </a>
+        </nav>
+      </div>
+      <div data-hover="1" data-delay="0" class="c-nav__dropdown w-dropdown">
+        <div class="c-nav__dropdown-toggle w-dropdown-toggle">
+          <a href="/{{{block "url-prefix"}}}company" class="c-nav__menu-item w-nav-link">
+            {{t "Company"}}
+          </a>
+        </div>
+        <nav class="c-nav__dropdown-list w-dropdown-list">
+          <a href="/{{{block "url-prefix"}}}about-us" class="c-nav__dropdown-item w-dropdown-link">
+            {{t "About Us"}}
+          </a>
+          <a href="/{{{block "url-prefix"}}}news" class="c-nav__dropdown-item w-dropdown-link h-stage-one--hide">
+            {{t "News / Press / Blog"}}
+          </a>
+          <a href="/{{{block "url-prefix"}}}media-relations" class="c-nav__dropdown-item w-dropdown-link h-stage-one--hide">
+            {{t "Media Relations"}}
+          </a>
+          <a href="/{{{block "url-prefix"}}}investor-relations" class="c-nav__dropdown-item w-dropdown-link h-stage-one--hide">
+            {{t "Investor Relations"}}
+          </a>
+          <a href="/{{{block "url-prefix"}}}careers" class="c-nav__dropdown-item w-dropdown-link h-stage-one--hide">
+            {{t "Careers"}}
+          </a>
+        </nav>
+      </div>
+    </nav>
+
+    <div class="c-nav__buttons">
+      <a href="//app.docuwalk.com/login" class="c-nav__button c-nav__sign-in-button w-button">
+        {{t "Sign In"}}
+      </a>
+      <a href="/{{{block "url-prefix"}}}pricing#plans" class="c-nav__button c-nav__sign-up-button w-button">
+        {{t "Get Started"}}
+      </a>
+    </div>
+  </div>
+</div>

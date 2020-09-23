@@ -1,0 +1,19 @@
+<svg id="play_button_BIG" data-name="play button BIG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="83.591" height="83.591" viewBox="0 0 83.591 83.591">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Mask" d="M0,40.054A40.054,40.054,0,1,1,40.054,80.108,40.07,40.07,0,0,1,0,40.054Z" fill="#cad1e1"/>
+    </clipPath>
+  </defs>
+  <g id="Icon_Play" data-name="Icon/Play">
+    <rect id="Base" width="83.591" height="83.591" fill="none"/>
+    <g id="Mask_Group_7" data-name="Mask Group 7" transform="translate(1.741 1.741)" clip-path="url(#clip-path)">
+      <g id="Symbols">
+        <g id="Icon_Play-2" data-name="Icon/Play">
+          <g id="Mask-2" data-name="Mask">
+            <path id="Path_1" data-name="Path 1" d="M42.054,2A40.054,40.054,0,1,0,82.108,42.054,40.068,40.068,0,0,0,42.054,2ZM34.043,60.078V24.03L58.075,42.054,34.043,60.078Z" transform="translate(-2 -2)" fill="#e4b62c"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

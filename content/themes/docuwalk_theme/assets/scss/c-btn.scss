@@ -1,0 +1,126 @@
+/* .c-btn
+-----------------------------------------------------------*/
+$r: ".c-btn";
+
+// block
+//-----------------------------------------------------------
+#{$r} {
+  display: inline-block;
+  font-size: 12px;
+  padding-top: 9px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 9px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  background-color: transparent;
+  font-family: Arial, sans-serif;
+  color: $black;
+  transition: border-color 0.3s,
+              color 0.3s,
+              background-color 0.3s,
+              opacity 0.3s;
+  text-transform: uppercase;
+  text-align: center;
+  min-width: 152px;
+
+  @media (max-width: 992px - 1) {
+    min-width: 126px;
+    // line-height: 1.2;
+    // padding-top: 8px;
+    // padding-left: 16px;
+    // padding-right: 16px;
+    // padding-bottom: 6px;
+  }
+
+  // element
+  //---------------------------------------------------------
+
+
+  // modifier
+  //---------------------------------------------------------
+  &--min {
+    width: auto;
+  }
+
+  &--max {
+    width: 1005;
+  }
+
+  &--light-blue,
+  &:focus {
+    border-color: #7792aa;
+    background-color: #7792aa;
+    color: $white;
+
+    &:hover {
+      border-color: #2d5172;
+      background-color: #2d5172;
+    }
+  }
+
+  &--dark-blue,
+  &:focus {
+    border-color: #2e4354;
+    background-color: #2e4354;
+    color: $white;
+
+    &:hover {
+      border-color: #637788;
+      background-color: #637788;
+    }
+  }
+
+  &--light-green {
+    border-color: #75cc96;
+    background-color: #75cc96;
+    color: $white;
+
+    &:hover,
+    &:focus {
+      border-color: #2f9856;
+      background-color: #2f9856;
+    }
+  }
+
+  &--yellow {
+    border-color: #e4b62c;
+    background-color: #e4b62c;
+    color: $white;
+
+    &:hover,
+    &:focus {
+      border-color: #957000;
+      background-color: #957000;
+    }
+  }
+
+  &--red {
+    border-color: #d57872;
+    background-color: #d57872;
+    color: $white;
+
+    &:hover,
+    &:focus {
+      border-color: #85221d;
+      background-color: #85221d;
+    }
+  }
+
+  &--dark-green {
+    border-color: #5a867c;
+    background-color: #5a867c;
+    color: $white;
+
+    &:hover,
+    &:focus {
+      border-color: #26594e;
+      background-color: #26594e;
+    }
+  }
+
+
+}
+
+// influence
+//-----------------------------------------------------------

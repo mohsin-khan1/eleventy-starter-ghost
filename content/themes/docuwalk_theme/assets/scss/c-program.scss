@@ -1,0 +1,101 @@
+/* .c-program
+-----------------------------------------------------------*/
+$r: ".c-program";
+
+// block
+//-----------------------------------------------------------
+#{$r} {
+
+  // element
+  //---------------------------------------------------------
+
+  &__container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1920px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  &__inner {
+    display: flex;
+    padding-top: 32px;
+    margin-bottom: 32px;
+    padding-left: calc(24% - 294px);
+    padding-right: calc(24% - 294px);
+  }
+
+  &__left {
+    flex: 1 0;
+    display: flex;
+    padding-right: calc(24% - 294px);
+  }
+
+  &__image {
+    flex: 1;
+    margin-right: 32px;
+  }
+
+  &__left-content {
+    // flex: 0;
+  }
+
+  &__list {
+    display: block;
+    font-size: 18px;
+    line-height: 1.6;
+    padding-left: 0;
+    font-weight: 600;
+
+    li {
+      display: block;
+
+      & + li {
+        margin-top: 8px;
+      }
+    }
+
+    &--check {
+      li {
+        background-image: url(#{$PATH_TO_IMAGES}/icon-check-2.svg);
+        background-repeat: no-repeat;
+        background-size: auto 1.75em;
+        background-position: 0 50%;
+        padding-top: 0.25em;
+        padding-bottom: 0.25em;
+        padding-left: 2.25em;
+      }
+    }
+  }
+
+  &__right {
+    flex: 1 0;
+    margin-left: 32px;
+  }
+
+  &__title {
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 1.1;
+    color: #333333;
+  }
+
+  &__content {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333333;
+    margin-top: 8px;
+
+  }
+
+  &__form {
+    margin-top: 16px;
+  }
+
+  // modifier
+  //---------------------------------------------------------
+}
+
+// influence
+//-----------------------------------------------------------

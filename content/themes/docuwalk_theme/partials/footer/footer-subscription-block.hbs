@@ -1,0 +1,25 @@
+<div class="c-footer__subscription">
+  <section id="subscribe-form" class="c-footer-subscribe-form">
+    <div class="c-footer-subscribe-form__centered-container w-container">
+      <h2 class="c-footer-subscribe-form__header">Sign up for our email</h2>
+      <p class="c-footer-subscribe-form__text">From time to time we reach out to let you know of new features and exciting news.</p>
+      <div class="c-footer-subscribe-form__form-block w-form">
+        <form id="email-form" name="subscribe" data-name="subscribe" method="post" action="//identity.docuwalk.com/api/leads/new" class="c-footer-subscribe-form__flex">
+          <div class="c-footer-subscribe-form__input-wrapper">
+            <input type="email" class="c-field c-footer-subscribe-form__input w-input" maxlength="70" name="email" data-name="email" placeholder="Email" required="" />
+          </div>
+          <input type="submit" value="Subscribe" data-wait="Please wait..." class="c-button c-footer-subscribe-form__button c-button--light-blue w-button" />
+          <div class="h-hide w-embed">
+            <input type="text" value="subscribe" maxlength="20" name="formName" required readonly hidden/>
+          </div>
+        </form>
+        <div class="w-form-done">
+          <div>Thank you! Your submission has been received!</div>
+        </div>
+        <div class="w-form-fail">
+          <div>Oops! Something went wrong while submitting the form.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

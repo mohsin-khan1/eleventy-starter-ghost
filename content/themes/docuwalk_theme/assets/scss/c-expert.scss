@@ -1,0 +1,154 @@
+/* .c-expert
+-----------------------------------------------------------*/
+$r: ".c-expert";
+
+// block
+//-----------------------------------------------------------
+#{$r} {
+  background-color: #b4d0be;
+
+  // element
+  //---------------------------------------------------------
+  &__container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1920px;
+    padding-left: 32px;
+    padding-right: 32px;
+    background-image: url(#{$PATH_TO_IMAGES}/resources-expert-leaf-bg.svg);
+    background-repeat: no-repeat;
+    background-size: auto 24%;
+    background-position: 96% 100%;
+
+    @media (max-width: 1280px - 1) {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
+    @media (max-width: 768px - 1) {
+      background: none;
+    }
+
+    @media (max-width: 480px - 1) {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (max-width: 768px - 1) {
+      flex-direction: column-reverse;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      max-width: 500px;
+    }
+  }
+
+  &__image {
+    flex: 1;
+
+    @media (max-width: 768px - 1) {
+      margin-top: 16px;
+    }
+
+    img {
+      display: block;
+      max-height: 520px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &__body {
+    width: 56%;
+    padding: 0 16% 0 8%;
+    padding-bottom: 8%;
+
+    @media (max-width: 1280px - 1) {
+      padding-right: 8%;
+    }
+
+    @media (max-width: 768px - 1) {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 0;
+      padding-left: 0;
+      padding-right: 0;
+      width: auto;
+    }
+  }
+
+  &__title {
+    font-family: "HelveticaNeue", Arial, sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #2e4354;
+    font-size: 42px;
+    margin-bottom: 32px;
+
+    @media (max-width: 1280px - 1) {
+      font-size: 32px;
+    }
+
+    @media (max-width: 768px - 1) {
+      margin-bottom: 24px;
+    }
+
+    @media (max-width: 480px - 1) {
+      font-size: 30px;
+    }
+  }
+
+  &__content {
+    @media (max-width: 768px - 1) {
+      align-self: center;
+      text-align: center;
+      width: 75%;
+    }
+
+    @media (max-width: 480px - 1) {
+      width: 100%;
+    }
+
+    span {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.6;
+      color: #2e4354;
+
+      @media (max-width: 768px - 1) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  // modifier
+  //---------------------------------------------------------
+}
+
+// influence
+//-----------------------------------------------------------
+#{$r} {
+  .c-field {
+    width: 75%;
+  }
+
+  .c-expert {
+    &__content {
+      .c-field {
+        @media (max-width: 768px - 1) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+/* .c-positions
+-----------------------------------------------------------*/
+$r: ".c-positions";
+
+// block
+//-----------------------------------------------------------
+#{$r} {
+  background-image:  url(#{$PATH_TO_IMAGES}/careers-position-bg.svg), linear-gradient(143deg, rgba(189, 216, 230, 0.31) 15%, rgba(178, 210, 213, 0.15) 43%);
+  background-position: center bottom, center bottom;
+  background-size: 100% auto,  100% auto;
+  background-repeat: no-repeat, no-repeat;
+
+  // element
+  //---------------------------------------------------------
+  &__container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1920px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    padding-bottom: 8%;
+    padding-top: 40px;
+    padding-right: 8%;
+    padding-left: 8%;
+  }
+
+  &__grid {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    width: calc(25% - 24px);
+    margin-top: 32px;
+    margin-right: 32px;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+
+    &:nth-of-type(-n + 4) {
+      margin-top: 0;
+    }
+
+    &--title {
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 1.2;
+      color: #333333;
+      margin-bottom: 16px;
+    }
+
+    &--text {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #333333;
+    }
+  }
+
+  // modifier
+  //---------------------------------------------------------
+}
+
+// influence
+//-----------------------------------------------------------

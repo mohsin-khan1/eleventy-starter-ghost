@@ -1,0 +1,150 @@
+/* .c-faq
+-----------------------------------------------------------*/
+$r: ".c-faq";
+
+// block
+//-----------------------------------------------------------
+#{$r} {
+
+  // element
+  //---------------------------------------------------------
+  &__container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1920px;
+    padding-left: $size * 4;
+    padding-right: $size * 4;
+
+    @media (max-width: 1280px - 1) {
+      padding-left: $size * 3;
+      padding-right: $size * 3;
+    }
+
+    @media (max-width: 768px - 1) {
+      padding-left: $size * 2;
+      padding-right: $size * 2;
+    }
+
+    @media (max-width: 768px - 1) {
+      padding-left: 0;
+      padding-right: 0;
+      // max-width: 500px;
+    }
+  }
+
+  &__inner {
+    // background-color: $white;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+    padding: 32px;
+
+    @media (max-width: 1280px - 1) {
+      padding: $size * 3;
+    }
+
+    @media (max-width: 768px - 1) {
+      width: auto;
+      padding: $size * 2;
+    }
+  }
+
+  &__body {
+    margin-left: auto;
+    margin-right: auto;
+    // max-width: 940px;
+  }
+
+  &__title {
+    font-size: $size * 5;
+    font-weight: 600;
+    text-align: center;
+
+    @media (max-width: 1280px - 1) {
+      font-size: $size * 4 + 4;
+    }
+
+    @media (max-width: 992px - 1) {
+      font-size: $size * 3 + 4;
+    }
+
+    @media (max-width: 768px - 1) {
+      font-size: $size * 2 + 4;
+    }
+
+    @media (max-width: 480px - 1) {
+      font-size: $size * 2;
+    }
+  }
+
+  &__content {
+    margin-top: $size * 4;
+
+    @media (max-width: 1280px - 1) {
+      margin-top: $size * 3;
+    }
+
+    @media (max-width: 768px - 1) {
+      margin-top: $size;
+    }
+  }
+
+  // modifier
+  //---------------------------------------------------------
+}
+
+// influence
+//-----------------------------------------------------------
+
+#{$r} {
+  .c-accordion {
+    &__title {
+      @media (max-width: 992px - 1) {
+        font-size: $size * 2 - 2;
+        padding: $size + 4;
+        padding-right: $size + 3;
+      }
+
+      @media (max-width: 768px - 1) {
+        padding: $size $size + 4;
+        padding-right: $size + 4;
+      }
+    }
+
+    &__dropdown {
+      @media (max-width: 992px - 1) {
+        padding: $size + 4;
+      }
+
+      @media (max-width: 768px - 1) {
+        padding: $size $size + 4;
+        font-size: $size + 4;
+      }
+    }
+
+    &__plus {
+      @media (max-width: 992px - 1) {
+       width: $size + 4;
+       height: $size + 4;
+      }
+
+      @media (max-width: 768px - 1) {
+        right: 12px;
+      }
+    }
+
+    &__item {
+      @media (max-width: 768px - 1) {
+        margin-top: $size;
+      }
+    }
+  }
+
+  &__content {
+    iframe {
+      border: 0;
+      width: 100%;
+      height: 1000px;
+    }
+  }
+}

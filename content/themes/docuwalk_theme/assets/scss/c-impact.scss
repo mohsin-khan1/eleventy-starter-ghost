@@ -1,0 +1,47 @@
+/* .c-impact
+-----------------------------------------------------------*/
+$r: ".c-impact";
+
+// block
+//-----------------------------------------------------------
+#{$r} {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 5%;
+  margin-right: -32px;
+
+  // element
+  //---------------------------------------------------------
+  > * {
+    margin-left: 5%;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+
+  &__title {
+    font-weight: 600;
+    line-height: 1.2;
+    font-size: $size * 6;
+  }
+
+  &__img {
+    overflow: hidden;
+
+    img {
+      display: block;
+      width: auto;
+      max-height: 196px;
+    }
+  }
+
+
+  // modifier
+  //---------------------------------------------------------
+}
+
+// influence
+//-----------------------------------------------------------

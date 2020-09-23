@@ -1,0 +1,141 @@
+/* .c-headline
+-----------------------------------------------------------*/
+$r: ".c-headline";
+
+// block
+//-----------------------------------------------------------
+#{$r} {
+  background-image: url(#{$PATH_TO_IMAGES}/investor-relations-headline-bg-2.svg), url(#{$PATH_TO_IMAGES}/investor-relations-headline-bg.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto 100%, auto 100%;
+  background-position: 100% 50%, 0 50%;
+
+  @media (max-width: 992px - 1) {
+    background-position: -320px 50%, 0% 50%;
+  }
+
+  @media (max-width: 768px - 1) {
+    background-position: -240px 50%, 0% 50%;
+  }
+
+  @media (max-width: 480px - 1) {
+    background-image: url(#{$PATH_TO_IMAGES}/investor-relations-headline-bg.svg);
+    background-position: 0% 100%;
+    background-size: 200% auto;
+  }
+
+  // element
+  //---------------------------------------------------------
+  &__container {
+    max-width: 100%;
+
+    @media (max-width: 480px - 1) {
+      padding-bottom: 55%;
+    }
+  }
+
+  &__inner {
+    align-items: center;
+    display: flex;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    min-height: 480px;
+
+    @media (max-width: 1280px - 1) {
+      min-height: 400px;
+    }
+
+    @media (max-width: 992px - 1) {
+      min-height: 360px;
+    }
+
+    @media (max-width: 768px - 1) {
+      min-height: 280px;
+    }
+
+    @media (max-width: 480px - 1) {
+      display: block;
+      min-height: 0;
+      padding-left: 16px;
+      padding-right: 16px;
+      padding-top: 16px;
+      padding-bottom: 25%;
+      background-image: url(#{$PATH_TO_IMAGES}/investor-relations-headline-bg-mobile.svg);
+      background-repeat: no-repeat;
+      background-position: 0 100%;
+      background-size: 100% auto;
+    }
+  }
+
+  &__body {
+    width: 50%;
+    margin-left: 50%;
+    padding-right: 8%;
+
+    @media (max-width: 1280px - 1) {
+      padding-left: 4%;
+      padding-right: 4%;
+    }
+
+    @media (max-width: 992px - 1) {
+      width: auto;
+      flex: 1;
+      margin-left: 360px;
+    }
+
+    @media (max-width: 768px - 1) {
+      margin-left: 280px;
+    }
+
+    @media (max-width: 480px - 1) {
+      margin-left: 0;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  &__title {
+      font-size: 64px;
+      font-weight: 600;
+      line-height: 1.1;
+
+      @media (max-width: 1280px - 1) {
+        font-size: 52px;
+      }
+
+      @media (max-width: 992px - 1) {
+        font-size: 48px;
+      }
+
+      @media (max-width: 768px - 1) {
+        font-size: 28px;
+      }
+  }
+
+  &__content {
+    font-size: 24px;
+    line-height: 1.6;
+
+    @media (max-width: 1280px - 1) {
+      font-size: 18px;
+    }
+
+    @media (max-width: 992px - 1) {
+      font-size: 16px;
+    }
+
+    @media (max-width: 768px - 1) {
+      font-size: 14px;
+    }
+
+    @media (max-width: 480px - 1) {
+      margin-top: 8px;
+    }
+  }
+
+  // modifier
+  //---------------------------------------------------------
+}
+
+// influence
+//-----------------------------------------------------------

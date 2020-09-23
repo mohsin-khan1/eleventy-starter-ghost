@@ -1,0 +1,184 @@
+/* .c-downloads
+-----------------------------------------------------------*/
+$r: ".c-downloads";
+
+// block
+//-----------------------------------------------------------
+#{$r} {
+
+  // element
+  //---------------------------------------------------------
+  &__container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1920px;
+    padding-left: 32px;
+    padding-right: 32px;
+
+    @media (max-width: 1280px - 1) {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
+    @media (max-width: 480px - 1) {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (max-width: 768px - 1) {
+      max-width: 500px;
+    }
+  }
+
+  &__grid {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+
+    @media (max-width: 768px - 1) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    width: 560px;
+  }
+
+  &__item + &__item {
+    margin-left: 16px;
+
+    @media (max-width: 768px - 1) {
+      margin-left: 0;
+      margin-top: 24px;
+    }
+  }
+
+  &__image {
+    background-color: #eeeeee;
+    border-radius: 6px;
+    width: 148px;
+    height: 148px;
+    margin-right: 16px;
+    overflow: hidden;
+
+    @media (max-width: 1280px - 1) {
+      width: 120px;
+      height: 120px;
+    }
+
+    @media (max-width: 480px - 1) {
+      width: 76px;
+      height: 76px;
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__description {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+  }
+
+  &__header {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 12px;
+
+    @media (max-width: 1280px - 1) {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__title {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.3;
+    color: #333333;
+    margin-bottom: 8px;
+
+    @media (max-width: 1280px - 1) {
+      margin-bottom: 4px;
+    }
+
+    @media (max-width: 480px - 1) {
+      font-size: 16px;
+    }
+  }
+
+  &__version {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.6;
+    color: #333333;
+    margin-right: 16px;
+
+    @media (max-width: 480px - 1) {
+      font-size: 12px;
+    }
+  }
+
+  &__published {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #999999;
+
+    @media (max-width: 480px - 1) {
+      font-size: 12px;
+    }
+  }
+
+  &__desc {
+    flex: 1;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #2e4354;
+
+    @media (max-width: 1280px - 1) {
+      width: 100%;
+      flex: 0 1 auto;
+    }
+
+    @media (max-width: 480px - 1) {
+      font-size: 12px;
+      line-height: 1.4;
+    }
+  }
+
+  &__controls {
+    align-self: flex-end;
+    margin-left: 16px;
+
+    @media (max-width: 1280px - 1) {
+      margin-left: 0;
+      margin-top: 16px;
+    }
+  }
+
+  &__button {}
+
+
+  // modifier
+  //---------------------------------------------------------
+}
+
+// influence
+//-----------------------------------------------------------

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="29.222" height="32" viewBox="0 0 29.222 32">
+  <g id="Group_14919" data-name="Group 14919" transform="translate(11558.741 -4762.831)">
+    <g id="Material_icons-06-28" data-name="Material icons-06-28" transform="translate(-11558.741 4762.831)">
+      <path id="Path_33383" data-name="Path 33383" d="M3,0V32H26.877V0H3ZM26.877,26.458H24.052v2.875H5.653V2.667h18.4V7.459h2.825Z" transform="translate(-3)" fill="#4d6882"/>
+      <rect id="Rectangle_12038" data-name="Rectangle 12038" width="9.669" height="2.729" transform="translate(5.207 6.258)" fill="#4d6882"/>
+      <rect id="Rectangle_13769" data-name="Rectangle 13769" width="9.669" height="2.729" transform="translate(5.207 11.551)" fill="#4d6882"/>
+      <rect id="Rectangle_13770" data-name="Rectangle 13770" width="7.695" height="2.729" transform="translate(5.236 16.844)" fill="#4d6882"/>
+    </g>
+    <path id="Path_42805" data-name="Path 42805" d="M2,15.094A4.094,4.094,0,1,0,6.094,11,4.1,4.1,0,0,0,2,15.094Zm5.459,0a1.365,1.365,0,1,1-1.365-1.365A1.366,1.366,0,0,1,7.459,15.094Z" transform="translate(-11542.437 4760.442)" fill="#4d6882"/>
+    <path id="Path_42806" data-name="Path 42806" d="M2.729,22.094a1.366,1.366,0,0,1,1.365-1.365H9.553a1.366,1.366,0,0,1,1.365,1.365v4.094h2.729V22.094A4.1,4.1,0,0,0,9.553,18H4.094A4.1,4.1,0,0,0,0,22.094v4.094H2.729Z" transform="translate(-11543.166 4762.702)" fill="#4d6882"/>
+  </g>
+</svg>

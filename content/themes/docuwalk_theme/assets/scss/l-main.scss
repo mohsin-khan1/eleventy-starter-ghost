@@ -1,0 +1,63 @@
+/* .l-main
+-------------------------------------------------------------*/
+$r: ".l-main";
+
+// base
+//-----------------------------------------------------------
+#{$r} {
+  flex-grow: 1;
+  padding: $size * 6 $size * 4;
+
+  // element
+  //---------------------------------------------------------
+
+  // modifiers
+  //---------------------------------------------------------
+  &--clear {
+    padding: 0;
+  }
+
+  &--simple {
+    padding: $size * 6 0;
+
+    @media (max-width: 1440px - 1) {
+      padding-top: $size * 4;
+      padding-bottom: $size * 4;
+    }
+
+    @media (max-width: 1280px - 1) {
+      padding-top: $size * 3;
+      padding-bottom: $size * 3;
+    }
+
+    @media (max-width:768px - 1) {
+      padding-top: $size * 2;
+      padding-bottom: $size * 2;
+    }
+  }
+
+  &--bg-beige {
+    background-color: #e6dcbd;
+  }
+
+  &--news-detail {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    // background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 100%;
+    background-image: url(#{$PATH_TO_IMAGES}/blog-details-bg.svg);
+  }
+
+  &--pt-0 {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+// influence
+//-----------------------------------------------------------

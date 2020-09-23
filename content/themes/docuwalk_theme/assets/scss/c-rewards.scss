@@ -1,0 +1,118 @@
+/* .c-rewards
+-----------------------------------------------------------*/
+$r: ".c-rewards";
+
+// block
+//-----------------------------------------------------------
+#{$r} {
+  background-image: url(#{$PATH_TO_IMAGES}/become-a-partner-rewards-bg-1.svg), url(#{$PATH_TO_IMAGES}/become-a-partner-rewards-bg-2.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 10% auto, 12% auto;
+  background-position: 0 100%, 100% 100%;
+
+  &__container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1920px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  &__inner {
+    display: flex;
+    padding-top: 32;
+    padding-bottom: 32px;
+    padding-left: calc(24% - 294px);
+    padding-right: calc(24% - 294px);
+  }
+
+  &__left-col {
+    flex: 1 0;
+    margin-right: 32px;
+    padding-bottom: 10%;
+  }
+
+  &__right-col {
+    margin-left: calc(24% - 294px); //56px;
+    flex: 1 0;
+  }
+
+  &__block {
+    padding-top: 48px;
+  }
+
+  &__title {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1.1;
+
+    &--highlighted {
+      color: #0e6c75;
+    }
+  }
+
+  &__sub-title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.1;
+
+    &--highlighted {
+      color: #0e6c75;
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  &__list {
+    display: block;
+    font-size: 18px;
+    line-height: 1.6;
+    padding-left: 0;
+
+    li {
+      display: block;
+    }
+
+    &--check {
+      li {
+        background-image: url(#{$PATH_TO_IMAGES}/icon-check.svg);
+        background-repeat: no-repeat;
+        background-size: auto 1em;
+        background-position: 0 50%;
+        padding-left: 2em;
+      }
+    }
+  }
+
+  &__remark {
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.17;
+    letter-spacing: normal;
+    text-align: left;
+    color: #773b20;
+  }
+
+  &__image {
+    padding-top: 32px;
+  }
+
+  &__form {
+    margin-top: 24px;
+  }
+
+  // element
+  //---------------------------------------------------------
+
+  // modifier
+  //---------------------------------------------------------
+}
+
+// influence
+//-----------------------------------------------------------

@@ -1,0 +1,92 @@
+/* .c-features
+-----------------------------------------------------------*/
+$r: ".c-features";
+
+// block
+//-----------------------------------------------------------
+#{$r} {
+
+  // element
+  //---------------------------------------------------------
+  &__container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1920px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: calc(24% - 294px);
+    padding-right: calc(24% - 294px);
+  }
+
+  &__image {
+    flex: 1;
+    margin-right: 32px;
+    text-align: center;
+  }
+
+  &__body {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin-left: calc(24% - 294px);
+  }
+
+  &__item {
+    width: calc(33.333333333333% - 32px);
+    margin-top: 48px;
+    margin-right: 48px;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+
+    &:nth-of-type(-n + 3) {
+      margin-top: 0;
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon-wrap {
+    margin-right: 1em;
+  }
+
+  &__icon {
+    width: 2em;
+    height: 2em;
+  }
+
+  &__title {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.2;
+    min-height: 2.4em;
+  }
+
+  &__content {
+    font-size: 14px;
+    line-height: 1.6;
+    padding-left: 3em;
+  }
+
+
+  // modifier
+  //---------------------------------------------------------
+}
+
+// influence
+//-----------------------------------------------------------

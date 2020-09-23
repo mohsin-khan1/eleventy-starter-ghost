@@ -1,0 +1,68 @@
+/* .c-apply
+-----------------------------------------------------------*/
+$r: ".c-apply";
+
+// block
+//-----------------------------------------------------------
+#{$r} {
+
+  // element
+  //---------------------------------------------------------
+  &__container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1920px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  &__inner {
+    display: flex;
+    padding-bottom: 24px;
+    align-items: center;
+    padding-top: 24px;
+    padding-right: 8%;
+    padding-left: 8%;
+  }
+
+  &__form {
+    flex: 1;
+    margin-left: 8%;
+  }
+
+  &__body {
+    width: 50%;
+    position: relative;
+  }
+
+  &__image {
+    position: absolute;
+    top: 20px;
+    right: calc(100% + 4%);
+    width: 180px;
+
+    img {}
+  }
+
+  &__title {
+    font-size: 72px;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 24px;
+    color: #2e4354;
+  }
+
+  &__content {
+    font-size: 24px;
+    line-height: 1.2;
+    color: #363940;
+  }
+
+
+  // modifier
+  //---------------------------------------------------------
+}
+
+// influence
+//-----------------------------------------------------------

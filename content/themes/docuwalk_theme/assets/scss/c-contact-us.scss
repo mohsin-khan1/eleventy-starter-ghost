@@ -1,0 +1,85 @@
+/* .c-contact-us
+-----------------------------------------------------------*/
+$r: ".c-contact-us";
+
+// block
+//-----------------------------------------------------------
+#{$r} {
+  background-color: #bdd8e6;
+  background-image: url(#{$PATH_TO_IMAGES}/company-contact-us-bg.svg);
+  background-position: 0 100%;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+
+  // element
+  //---------------------------------------------------------
+  &__container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1920px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  &__inner {
+    display: flex;
+    padding-left: calc(24% - 294px);
+    padding-right: calc(24% - 294px);
+    padding-bottom: 4%;
+    padding-top: 32px;
+  }
+
+  &__body {
+    display: flex;
+    margin-right: 48px;
+  }
+
+  &__title {
+    font-family: "HelveticaNeue", Arial;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1.1;
+    color: #4d6882;
+    min-width: 280px;
+  }
+
+  &__address {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 32px;
+    width: 480px;
+  }
+
+  &__logo {
+    margin-bottom: 32px;
+    width: 100%;
+
+    img {
+      max-height: 50px;
+    }
+  }
+
+  &__form {
+    width: calc(40% - 40px);
+    margin-left: calc(27% - 294px);
+  }
+
+
+  // modifier
+  //---------------------------------------------------------
+}
+
+// influence
+//-----------------------------------------------------------
+
+#{$r} {
+  .c-contact {
+    flex: 1 1 auto;
+    margin-top: 0;
+
+    & + .c-contact {
+      margin-left: 16px;
+    }
+  }
+}

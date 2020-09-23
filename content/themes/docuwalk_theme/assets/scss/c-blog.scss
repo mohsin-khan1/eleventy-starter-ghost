@@ -1,0 +1,240 @@
+/* .c-blog
+-----------------------------------------------------------*/
+$r: ".c-blog";
+
+// block
+//-----------------------------------------------------------
+#{$r} {
+  display: grid;
+  grid-row-gap: $size * 2;
+  grid-column-gap: $size * 2;
+
+  @media (min-width: 1025px) and (max-width: 1439px) {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  @media (min-width: 1440px) {
+    grid-template-columns: repeat(10, 1fr);
+  }
+
+  // element
+  //---------------------------------------------------------
+  &__item {
+    display: flex;
+    align-items: stretch;
+    overflow: hidden;
+    transition: box-shadow .3s;
+    border-radius: $border-radius;
+
+    &:hover {
+      box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &--1 {
+      @media (min-width: 1025px) and (max-width: 1439px) {
+        grid-area: 1 / 1 / 2 / 6;
+      }
+
+      @media (min-width: 1440px) {
+        grid-area: 1 / 1 / 5 / 5;
+      }
+    }
+
+    &--2 {
+      @media (min-width: 1025px) and (max-width: 1439px) {
+        grid-area: 1 / 6 / 2 / 9;
+      }
+
+      @media (min-width: 1440px) {
+        grid-area: 1 / 5 / 4 / 7;
+      }
+    }
+
+    &--3 {
+      @media (min-width: 1025px) and (max-width: 1439px) {
+        grid-area: 2 / 1 / 3 / 3;
+      }
+
+      @media (min-width: 1440px) {
+        grid-area: 1 / 7 / 3 / 9;
+      }
+    }
+
+    &--4 {
+      @media (min-width: 1025px) and (max-width: 1439px) {
+        grid-area: 2 / 3 / 3 / 5;
+      }
+
+      @media (min-width: 1440px) {
+        grid-area: 1 / 9 / 3 / 11;
+      }
+    }
+
+    &--5 {
+      @media (min-width: 1025px) and (max-width: 1439px) {
+        grid-area: 2 / 5 / 3 / 7;
+      }
+
+      @media (min-width: 1440px) {
+        grid-area: 5 / 1 / 7 / 3;
+      }
+    }
+
+    &--6 {
+      @media (min-width: 1025px) and (max-width: 1439px) {
+        grid-area: 2 / 7 / 3 / 9;
+      }
+
+      @media (min-width: 1440px) {
+        grid-area: 5 / 3 / 7 / 5;
+      }
+    }
+
+    &--7 {
+      @media (min-width: 1025px) and (max-width: 1439px) {
+        grid-area: 3 / 1 / 4 / 4;
+      }
+
+      @media (min-width: 1440px) {
+        grid-area: 4 / 5 / 7 / 7;
+      }
+    }
+
+    &--8 {
+      @media (min-width: 1025px) and (max-width: 1439px) {
+        grid-area: 3 / 4 / 4 / 9;
+      }
+
+      @media (min-width: 1440px) {
+        grid-area: 3 / 7 / 7 / 11;
+      }
+    }
+  }
+
+  &__content {
+    > * {
+      margin-top: 16px;
+
+      &:first-child {
+        margin: 0;
+      }
+    }
+  }
+
+  &__news {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    color: #7792aa;
+    overflow: hidden;
+    font-size: $size * 2 - 2;
+    border: 1px solid #efefef;
+    background-color: #efefef;
+    border-radius: $border-radius;
+    padding: $size * 2 $size * 2 $size * 3 $size * 2;
+
+    > * {
+      margin-top: 16px;
+
+      &:first-child {
+        margin: 0;
+      }
+    }
+
+    &--big {
+      flex-direction: row;
+      padding: 0;
+      color: #2e4354;
+      border-color: #8a939f;
+      background-color: $white;
+
+      #{$r}__img {
+        width: 54%;
+      }
+
+      #{$r}__content {
+        flex: 1;
+        padding: $size * 2 $size * 2 $size * 3 $size * 2;
+      }
+
+      #{$r}__title {
+        font-weight: 600;
+        font-size: $size * 4 - 4;
+      }
+    }
+  }
+
+  &__category {
+    color: #333333;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    font-size: $size * 2 - 2;
+    text-transform: uppercase;
+  }
+
+  &__img {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  &__title {
+    font-size: $size * 2 + 2;
+    font-weight: 600;
+    color: #333333;
+  }
+
+  &__text {
+    line-height: 1.8;
+  }
+
+  &__info {
+    display: flex;
+    margin-top: auto;
+    padding-top: $size * 2;
+  }
+
+  &__author {
+    display: flex;
+    align-items: center;
+    color: #0e6c75;
+    margin-right: $size * 2;
+  }
+
+  &__time {
+    display: flex;
+    align-items: center;
+    color: #0e6c75;
+  }
+
+  &__user {
+    color: #333333;
+    margin-right: $size * 2;
+  }
+
+  &__date {
+    color: #999999;
+  }
+
+  &__icon {
+    width: 1em;
+    height: 1em;
+    font-size: $size * 2 - 2;
+    margin-right: $size;
+  }
+
+  // modifier
+  //---------------------------------------------------------
+}
+
+// influence
+//-----------------------------------------------------------

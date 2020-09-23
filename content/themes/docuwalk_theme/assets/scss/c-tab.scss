@@ -1,0 +1,111 @@
+/* .c-tab
+-----------------------------------------------------------*/
+$r: ".c-tab";
+
+// block
+//-----------------------------------------------------------
+#{$r} {
+  $r: ".c-tab";
+  display: flex;
+  flex-wrap: wrap;
+
+  // element
+  //---------------------------------------------------------
+  &__nav {
+    display: inline-flex;
+    align-items: center;
+    padding: $size $size * 3 $size - 1 $size * 3;
+    cursor: pointer;
+    position: relative;
+    background-color: #bdd8e6;
+    color: #333333;
+    border: 1px solid #7792aa;
+    font-size: $size * 2;
+
+    &:nth-of-type(1) {
+      border-top-left-radius: 6px;
+      border-bottom-left-radius: 6px;
+    }
+
+    &:nth-last-of-type(1) {
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
+    }
+
+    &:after,
+    &:before {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      white-space: nowrap;
+      content: attr(data-title);
+      transition: 0.15s;
+    }
+
+    &:after {
+      opacity: 0;
+      // font-weight: bold;
+    }
+
+    &:before {
+      position: absolute;
+    }
+
+    & ~ & {
+      margin-left: -1px;
+    }
+
+    &:hover {
+      position: relative;
+
+      &:after {
+        opacity: 1;
+      }
+
+      &:before {
+        opacity: 0;
+      }
+    }
+  }
+
+  &__content {
+    order: 1;
+    width: 100%;
+    background-color: transparent;
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+    animation-name: animationTab;
+    font-size: $size * 2;
+    margin-top: $size * 2;
+    display: none;
+  }
+
+  :checked {
+    + #{$r}__nav {
+      color: #ffffff;
+      background-color: #7792aa;
+
+      &:after {
+        opacity: 1;
+      }
+
+      &:before {
+        opacity: 0;
+      }
+
+      + #{$r}__content {
+        display: block;
+      }
+    }
+  }
+
+  @keyframes animationTab {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+}

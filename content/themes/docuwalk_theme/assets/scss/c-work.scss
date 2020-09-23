@@ -1,0 +1,93 @@
+/* .c-work
+-----------------------------------------------------------*/
+$r: ".c-work";
+
+// block
+//-----------------------------------------------------------
+#{$r} {
+  background-color: #e6dcbd;
+  background-image: url(#{$PATH_TO_IMAGES}/careers-work-bg.svg);
+  background-repeat: no-repeat;
+  background-position: 103% 100%;
+  background-size: 20% auto;
+
+  // element
+  //---------------------------------------------------------
+  &__container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1920px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  &__image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__body {
+    width: 50%;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
+  &__title {
+    font-size: 72px;
+    font-weight: 600;
+    line-height: 1;
+    color: #333333;
+    margin-bottom: 32px;
+  }
+
+  &__controls {
+
+  }
+
+  // modifier
+  //---------------------------------------------------------
+  &--about-us {
+    background: none;
+    background-color: $white;
+    background-image: url(#{$PATH_TO_IMAGES}/about-us-work-image.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100% 100%;
+
+    #{$r}__container {
+
+    }
+
+    #{$r}__inner {
+
+    }
+
+    #{$r}__title {
+      font-family: "HelveticaNeue", Arial;
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 1.14;
+      color: #2e4354;
+      margin-bottom: 8px;
+    }
+
+    #{$r}__content {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #4d6882;
+      margin-bottom: 16px;
+    }
+  }
+}
+
+// influence
+//-----------------------------------------------------------

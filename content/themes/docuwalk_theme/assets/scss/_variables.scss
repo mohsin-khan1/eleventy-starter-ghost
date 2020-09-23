@@ -1,0 +1,36 @@
+// colors
+//-----------------------------------------------------------
+$red:               #d57872;
+$beige:             #f7f1e1;
+$white:             #ffffff;
+$black:             #000000;
+$green:             #29cb97;
+$yellow:            #e4b62c;
+$yellow-dark:       #c9ae58;
+$gray-pale:         #8a939f;
+$gray-dark:         #707070;
+$gray-light:        #e2e2e2;
+$blue-dark:         #2e4354;
+$placeholder-color: #e6e6e6;
+
+// theme
+//-----------------------------------------------------------
+$main-bg:           #f4f4f4;
+$aside-bg:          #7792aa;
+$theme-color:       #4d6982;
+$link-color:        #1e87f0;
+$body-color:        #2e4354;
+$form-error:        $red;
+$form-success:      $green;
+$form-disabled:     $gray-light;
+
+// sizes
+//-----------------------------------------------------------
+$size:          8px;
+$header-height: $size * 12;
+$aside-width:   $size * 22;
+$sidebar-width: $size * 40;
+
+// others
+//-----------------------------------------------------------
+$border-radius: 4px;

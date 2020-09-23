@@ -1,0 +1,235 @@
+/* .c-reports
+-----------------------------------------------------------*/
+$r: ".c-reports";
+
+// block
+//-----------------------------------------------------------
+#{$r} {
+  background-color: #e6dcbd;
+  color: #2e4354;
+
+  // element
+  //---------------------------------------------------------
+
+  &__container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1920px;
+    padding-left: 32px;
+    padding-right: 32px;
+
+    background-image: url(#{$PATH_TO_IMAGES}/investor-relations-reports-leaf-bg-1.svg), url(#{$PATH_TO_IMAGES}/investor-relations-reports-leaf-bg-2.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 8% auto, 9% auto;
+    background-position: 0 0, 100% 100%;
+
+    @media (max-width: 1280px - 1) {
+      background-size: 6% auto, 6% auto;
+    }
+
+    @media (max-width: 992px - 1) {
+      padding-left: 24px;
+      padding-right: 24px;
+      background-size: 10% auto, 12% auto;
+    }
+
+    @media (max-width: 480px - 1) {
+      padding-left: 16px;
+      padding-right: 16px;
+      background: none;
+    }
+  }
+
+  &__inner {
+    padding: 5% 4%;
+
+    @media (max-width: 1280px - 1) {
+      padding: 4% 0%;
+    }
+
+    @media (max-width: 992px - 1) {
+      max-width: 75%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media (max-width: 768px - 1) {
+      max-width: 500px;
+      padding-top: 6%;
+      padding-bottom: 6%;
+    }
+
+    @media (max-width: 480px - 1) {
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+  }
+
+  &__body {}
+
+  &__title {
+    font-size: 36px;
+    font-weight: 600;
+
+    @media (max-width: 1280px - 1) {
+      font-size: 32px;
+    }
+
+    @media (max-width: 992px - 1) {
+      font-size: 28px;
+    }
+
+    @media (max-width: 480px - 1) {
+      line-height: 1.2;
+    }
+  }
+
+  &__content {
+    margin-top: 8px;
+
+    @media (max-width: 768px - 1) {
+      margin-top: 16px;
+    }
+  }
+
+  &__grid {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (max-width: 480px - 1) {
+      display: block;
+    }
+
+    &--item {
+      display: flex;
+      flex-direction: column;
+      height: 220px;
+      width: calc(25% - 18px);
+      margin-top: 24px;
+      margin-right: 24px;
+      border-radius: 6px;
+      border: 1px solid #eeeeee;
+      padding: 32px 24px 24px 24px;
+      background-color: #fff;
+      transition: box-shadow .3s;
+      color: inherit;
+
+      &:nth-child(4n) {
+        margin-right: 0;
+      }
+
+      &:nth-of-type(-n + 4) {
+        margin-top: 0;
+      }
+
+      @media (max-width: 1280px - 1) {
+        padding: 24px 16px 16px 16px;
+      }
+
+      @media (max-width: 992px - 1) {
+        width: calc(50% - 16px);
+        margin-top: 32px;
+        margin-right: 32px;
+
+        &:nth-child(4n) {
+          margin-right: 32px;
+        }
+
+        &:nth-of-type(-n + 4) {
+          margin-top: 32px;
+        }
+
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
+
+        &:nth-of-type(-n + 2) {
+          margin-top: 0;
+        }
+      }
+
+      @media (max-width: 768px - 1) {
+        width: calc(50% - 12px);
+        margin-top: 24px;
+        margin-right: 24px;
+        min-height: 160px;
+
+        &:nth-child(4n) {
+          margin-right: 24px;
+        }
+
+        &:nth-of-type(-n + 4) {
+          margin-top: 24px;
+        }
+
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
+
+        &:nth-of-type(-n + 2) {
+          margin-top: 0;
+        }
+      }
+
+      @media (max-width: 480px - 1) {
+        width: auto;
+
+        &:nth-of-type(-n + 1000) {
+          margin-left: 0;
+          margin-right: 0;
+          margin-top: 16px;
+        }
+
+        &:nth-of-type(-n + 1) {
+          margin-top: 0;
+        }
+      }
+
+      > * {
+        margin-bottom: 18px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      &:hover {
+        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.25);
+      }
+    }
+
+    &--date {
+      font-size: 14px;
+      color: #999999;
+    }
+
+    &--title {
+      font-size: 18px;
+
+      @media (max-width: 1280px - 1) {
+        font-size: 16px;
+      }
+
+      @media (max-width: 768px - 1) {
+        font-weight: 600;
+      }
+    }
+
+    &--user {
+      margin-top: auto;
+      font-size: 14px;
+
+      @media (max-width: 768px - 1) {
+        font-size: 12px;
+      }
+    }
+  }
+
+
+  // modifier
+  //---------------------------------------------------------
+}
+
+// influence
+//-----------------------------------------------------------
